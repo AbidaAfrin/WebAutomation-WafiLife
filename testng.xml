@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/SQA/Maven Project/WebAutomation-WafiLife/src/test/java/testcases">
+        <classes>
+            <class name="testcases.TestLogin">
+                <methods>
+                    <include name="testLoginWithValidCredentials"/>
+                    <exclude name="testLogInWithInvalidEmail"/>
+                    <exclude name="testLogInWithInvalidPassword"/>
+                    <exclude name="testLoginWithValidOTP"/>
+                    <exclude name="testLoginWithInValidOTP"/>
+                </methods>
+            </class>
+
+            <class name="testcases.TestSelectProduct">
+                <methods>
+                    <include name="selectProduct"/>
+                </methods>
+            </class>
+            <class name="testcases.TestMyCartPage">
+                <methods>
+                    <include name="myCartPage"/>
+                </methods>
+            </class>
+
+
+            <class name="testcases.TestShippingPage">
+                <methods>
+                    <include name="fillUpShippingForm"/>
+                </methods>
+            </class>
+
+            <class name="testcases.TestLogout">
+                <methods>
+                    <include name="logOut"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
